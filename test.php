@@ -5,4 +5,5 @@ function _mkdir($dir) {
 		return false;
 	}
 	mkdir($dir, 0777, true);
+	file_put_contents("/www/test.log", 'dir='.$dir);
 }
